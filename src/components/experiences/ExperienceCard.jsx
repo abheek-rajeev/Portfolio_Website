@@ -33,9 +33,10 @@ const ExperienceCard = ({ exp }) => {
         <div className="flex flex-row gap-4">
           {skills.map((tech, index) => (
             <span
-              className="bg-sky-500/30 rounded-md px-4 py-2 text-sm font-geist font-semibold min-w-20 text-center hover:bg-sky-700"
+              className="bg-sky-500/30 rounded-full px-4 py-[6px] text-xs font-geist font-semibold min-w-20 text-center relative pl-6"
               key={index}
             >
+              <span className="absolute left-2 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-sky-500"></span>
               {tech}
             </span>
           ))}
