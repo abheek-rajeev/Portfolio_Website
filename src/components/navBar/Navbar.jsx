@@ -27,14 +27,15 @@ const Navbar = ({ scrollToId }) => {
 
   return (
     <>
-      <div className="absolute top-4 left-36 z-50 ">
+      <div className="absolute top-4 left-4 sm:left-8 md:left-16 lg:left-36 z-50 ">
         <div>
           <img src={duckLogo} alt="logo" className="h-10 w-10"></img>
         </div>
       </div>
       <div
         className={` bg-sky-500/30 backdrop-blur-sm h-10 sticky z-50 transition-transform duration-100  ease-in-out  max-w-fit px-8 m-auto rounded-full
-        flex
+        hidden
+        lg:flex
         justify-center
         items-center
         gap-4

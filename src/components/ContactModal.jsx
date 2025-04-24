@@ -47,9 +47,7 @@ const ContactModal = ({ handleClose }) => {
   return (
     <div className="fixed h-screen w-screen flex justify-center items-center top-0 left-0 z-40 bg-gray-900/70">
       <div
-        className={`relative bg-gray-900 ${
-          isMax ? "w-1/2" : "w-1/4"
-        } h-4/6 rounded-lg flex flex-col`}
+        className={`relative bg-gray-900 w-[95%] xs:w-3/5 sm:w-3/5 md:w-2/3 lg:w-1/2 h-3/6 lg:h-4/6 rounded-lg flex flex-col`}
       >
         {/* Header */}
         <div className="contact-header flex items-center justify-end p-2 gap-4 bg-gray-800/40 rounded-t-lg">
@@ -68,27 +66,25 @@ const ContactModal = ({ handleClose }) => {
         </div>
 
         {/* Content */}
-        <div className="contact-content flex text-white p-10 flex-1 overflow-y-auto">
+        <div className="contact-content flex text-white p-4 sm:p-6 md:p-8 lg:p-10 flex-1 overflow-y-auto">
           {isMax && (
-            <>
-              <div className="relative content-left flex-1 pr-4 pt-2">
-                <span className="block text-2xl font-geist font-semibold">
-                  Let's
-                </span>
-                <span className="block text-4xl font-geist uppercase font-bold tracking-wider">
-                  Chat
-                </span>
-                <span className="block absolute bottom-0 left-0 text-xs text-gray-600 font-geist">
-                  CONTACT INFO: +91 77365-74903
-                </span>
-              </div>
-            </>
+            <div className="relative content-left flex-1 pr-2 sm:pr-4 pt-2">
+              <span className="block text-base sm:text-lg md:text-2xl font-geist font-semibold">
+                Let's
+              </span>
+              <span className="block text-lg sm:text-2xl md:text-4xl font-geist uppercase font-bold tracking-wider">
+                Chat
+              </span>
+              <span className="block absolute bottom-0 left-0 text-xs text-gray-600 font-geist">
+                CONTACT INFO: +91 77365-74903
+              </span>
+            </div>
           )}
 
           <div className="content-right flex-1">
             {submitted ? (
               <div className="flex justify-center items-center h-full">
-                <p className="text-sky-400 text-center text-lg">
+                <p className="text-sky-400 text-center text-base sm:text-lg">
                   Thanks! I’ll get back to you soon.
                 </p>
               </div>

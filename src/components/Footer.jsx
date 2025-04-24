@@ -11,7 +11,7 @@ const Footer = () => {
     <>
       <div className="relative py-5 pb-10">
         <h2>&copy; Abheek Rajeev</h2>
-        <div className="absolute bottom-0 right-10 z-50">
+        <div className="absolute bottom-0 right-1 sm:right-1 lg:right-5 z-50">
           <img
             src={telephone}
             alt="telephone"

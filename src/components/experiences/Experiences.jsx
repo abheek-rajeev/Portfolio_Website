@@ -21,7 +21,10 @@ const Experiences = () => {
     },
   ];
   return (
-    <div id="ExperiencesPage" className="text-left px-36 py-16 text-white">
+    <div
+      id="ExperiencesPage"
+      className="text-left px-4 sm:px-8 md:px-16 lg:px-36 py-16 text-white"
+    >
       <h2 className="text-3xl font-bold">
         <span className="text-transparent bg-gradient-to-r from-sky-200 to-sky-600 bg-clip-text">
           Experience
