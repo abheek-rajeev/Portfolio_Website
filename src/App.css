@@ -3,4 +3,5 @@
   min-height: 100vh; /* Ensures the sticky element has space to scroll */
   color: white;
   overflow: visible;
+  background-color: black;
 }
