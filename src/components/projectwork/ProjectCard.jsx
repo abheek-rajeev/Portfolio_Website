@@ -14,13 +14,13 @@ const ProjectCard = ({ proj }) => {
       <img
         src={proj.img || reactLogo}
         alt="react"
-        className="max-h-20 mb-4 lg:mb-0"
+        className="h-36 w-36 mb-4 lg:mb-0 mr-auto ml-auto"
       />
       <div className="flex flex-col flex-wrap gap-3 w-full lg:w-3/5">
         <h2 className="text-xl lg:text-2xl font-bold capitalize font-geist">
           {proj.title}
         </h2>
-        <ul className="font-geist text-sm">
+        <ul className="list-disc font-geist text-sm">
           {proj.desc.map((descItem, index) => (
             <li key={index} className="py-[3px]">
               {descItem}

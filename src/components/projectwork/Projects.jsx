@@ -1,8 +1,19 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import wrodlePic from "../../assets/wordlePic.png";
 
 const Projects = () => {
   const projectDetails = [
+    {
+      img: wrodlePic,
+      title: "Wordle Clone",
+      skills: ["ReactJs", "Tailwind"],
+      desc: [
+        "Developed an interactive Wordle clone using React.js, replicating core game logic and UI features for an authentic user experience",
+        "Enhanced user experience with responsive design, ensuring seamless gameplay across 5+ device breakpoints and optimizing rendering to sub-100ms",
+      ],
+      link: "https://abheek-rajeev.github.io/Wordle_Clone_V1/",
+    },
     {
       title: "Book store API",
       skills: ["Node.js", "Express", "MongoDB", "Jest", "JWT"],
