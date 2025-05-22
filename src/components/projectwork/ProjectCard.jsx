@@ -20,7 +20,7 @@ const ProjectCard = ({ proj }) => {
         <h2 className="text-xl lg:text-2xl font-bold capitalize font-geist">
           {proj.title}
         </h2>
-        <ul className="list-disc font-geist text-sm">
+        <ul className="list-disc ml-5 font-geist text-sm">
           {proj.desc.map((descItem, index) => (
             <li key={index} className="py-[3px]">
               {descItem}
